@@ -42,7 +42,7 @@ KGs/
 │   ├── train.txt          # Training triples  
 │   ├── valid.txt          # Validation triples  
 │   ├── test.txt           # Test triples  
-│   └── entity2text.txt    # Entity descriptions (optional)  
+│   └── entity2text.txt    # Entity descriptions   
 ├── WN18/  
 │   ├── train.txt  
 │   ├── valid.txt  
