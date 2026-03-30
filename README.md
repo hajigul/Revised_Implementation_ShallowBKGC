@@ -37,19 +37,18 @@ pip install -r requirements.txt
 ### Dataset Preparation
 Place your datasets in the KGs/ folder with the following structure:
 
-text
-KGs/
-├── FB15K/
-│   ├── train.txt          # Training triples
-│   ├── valid.txt          # Validation triples
-│   ├── test.txt           # Test triples
-│   └── entity2text.txt    # Entity descriptions (optional)
-├── WN18/
-│   ├── train.txt
-│   ├── valid.txt
-│   ├── test.txt
-│   └── entity2text.txt
-└── ...
+KGs/  
+├── FB15K/  
+│   ├── train.txt          # Training triples  
+│   ├── valid.txt          # Validation triples  
+│   ├── test.txt           # Test triples  
+│   └── entity2text.txt    # Entity descriptions (optional)  
+├── WN18/  
+│   ├── train.txt  
+│   ├── valid.txt  
+│   ├── test.txt  
+│   └── entity2text.txt  
+└── ...  
 
 
 
@@ -76,8 +75,7 @@ python main.py --dataset KGs/FB15K --num_of_epochs 150 --embedding_dim 50 --batc
 ```
 
 
- Command Line Arguments
-Argument	Description	Default
+Command Line Arguments, Argument	Description	Default
 ```bash
 --dataset	Dataset path in KGs/ folder	KGs/FB15K
 --embedding_dim	Embedding dimension	50
@@ -90,7 +88,7 @@ Argument	Description	Default
 ```
 
 
-Running Experiments
+Running Experiments  
 Train on FB15K (full)
 ```bash
 python main.py --dataset KGs/FB15K --num_of_epochs 150 --embedding_dim 50 --batch_size 1000
@@ -118,7 +116,7 @@ ShallowBKGC/
 
 
 
-### Troubleshooting
+### Troubleshooting  
 FileNotFoundError: entityIDx_json not found
 Solution: Run main.py first with 1 epoch to generate the mapping:
 
@@ -127,7 +125,7 @@ python main.py --dataset KGs/YOUR_DATASET --num_of_epochs 1
 ```
 
 
-CUDA out of memory
+### CUDA out of memory  
 Solution: Reduce batch size or embedding dimension:
 
 ```bash
@@ -135,8 +133,8 @@ python main.py --dataset KGs/FB15K --batch_size 500 --embedding_dim 32
 ```
 
 
-Missing entity2text.txt
+### Missing entity2text.txt  
 Solution: The script will use entity IDs as text (with a warning). For best results, obtain the entity descriptions from the original dataset.
 
-BERT model download issues
+### BERT model download issues    
 Solution: The first run downloads BERT model (400MB). Ensure stable internet connection. Alternatively, download manually and place in cache folder.
