@@ -1,0 +1,30 @@
+# Core ML frameworks
+tensorflow==2.15.0
+torch==2.6.0+cu124
+torchvision==0.21.0+cu124
+torchaudio==2.6.0+cu124
+
+# BERT and Transformers
+transformers==4.57.6
+tokenizers==0.22.2
+pytorch-pretrained-bert==0.6.2
+
+# Scientific computing
+numpy==1.26.4
+scipy==1.13.1
+pandas==2.3.3
+scikit-learn==1.5.1
+
+# Utilities
+tqdm==4.67.3
+joblib==1.5.2
+six==1.17.0
+pyyaml==6.0.3
+
+# TensorFlow dependencies
+tensorboard==2.15.2
+tensorflow-estimator==2.15.0
+tensorflow-io-gcs-filesystem==0.31.0
+
+# Additional
+matplotlib  # optional, for plotting
