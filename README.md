@@ -1,6 +1,6 @@
 # Revised_Implementation_ShallowBKGC
 
-This repository contains an enhanced implementation of ShallowBKGC (Shallow Knowledge Graph Completion) that combines:
+This repository contains an enhanced implementation of ShallowBKGC 
 
 ##  Performance Metrics
 
